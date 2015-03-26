@@ -6,9 +6,11 @@
 	<!-- set global properties for this build -->
 	<property name="src" location="src"/>
 	<property name="lib.dir" value="lib"/>
+        <property name="adtnlibj.dist" value="../dist"/>
 	
 	<path id="classpath">
 		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		<fileset dir="${adtnlibj.dist}" includes="*.jar"/>
 	</path>
 	
 	<property name="bin" location="bin"/>
